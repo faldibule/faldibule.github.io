@@ -49,9 +49,9 @@
 
     <!-- jumbotron -->
     <div class="jumbotron text-center">
-      <img data-aos="fade-down" data-aos-duration="1500" class="img-thumbnail rounded-circle" src="img/profil.jpg" alt="Faldi Nur Ikhsan" width="200px" />
-      <h1 data-aos="fade-up" data-aos-duration="1500" class="display-4">Faldi Nur Ikhsan</h1>
-      <p data-aos="fade-up" data-aos-duration="1500" class="lead">Colleger | Gadget & Code enthusiast</p>
+      <img class="img-thumbnail rounded-circle" src="img/profil.jpg" alt="Faldi Nur Ikhsan" width="200px" />
+      <h1 class="display-4">Faldi Nur Ikhsan</h1>
+      <p class="lead"></p>
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -197,6 +197,17 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({once: true});
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {duration : 2, delay:1.5, text:'Colleger | Gadget & Code enthusiast'})
+      gsap.from('.jumbotron img', {duration: 1, rotateY:360, opacity:0, ease:'bounce'});
+      gsap.from('.navbar', {duration:1.5, y:'-100%', opacity:0, ease:'bounce'});
+      gsap.from('.display-4', {duration:1.5, x:-70, opacity:0, ease:'back'});
+      
     </script>
     
   </body>
