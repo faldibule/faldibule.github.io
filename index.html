@@ -209,39 +209,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
 
-    <script>
-      gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead', {duration : 2, delay:1.5, text:'Colleger | Gadget & Code enthusiast'})
-      gsap.from('.jumbotron img', {duration: 1, rotateY:180, opacity:0, ease:'bounce'});
-      gsap.from('.navbar', {duration:1.5, y:'-100%', opacity:0, ease:'bounce'});
-      gsap.from('.display-4', {duration:1.5, x:-70, opacity:0, ease:'back'});
-      
-    </script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyCo9xFxL_6aAC1m2aXjNklonvUpb5YfcOjCF4nIwRiQSdW89xxBEiNkZ4UmEUJYYnsng/exec'
-      const form = document.forms['faldibule-contact-form']
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
-
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        //ketika submit diklik
-        //tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            console.log('Success!', response);
-            //tampilkan tombol kirim, hilangkan tombol loading
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            myAlert.classList.toggle('d-none');
-            //reset form
-            form.reset();
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
+    <script src="js/myGasp.js"></script>
+    <script src="js/myJs.js"></script>
   </body>
 </html>
