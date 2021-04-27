@@ -165,16 +165,16 @@
             <form name="faldibule-contact-form">
               <div class="mb-3">
                 <label for="nama" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="nama" aria-describedby="nama" name="nama" />
+                <input required type="text" class="form-control" id="nama" aria-describedby="nama" name="nama" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+                <input required type="email" class="form-control" id="email" aria-describedby="email" name="email" />
                 <div id="email" class="form-text">We'll never share your email with anyone else.</div>
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                <textarea required class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
