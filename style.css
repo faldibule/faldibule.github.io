@@ -1,9 +1,9 @@
-* {
-  overflow-x: hidden;
-}
-
 body {
   font-family: "Montserrat";
+}
+
+#about #hobby {
+  overflow-x: hidden;
 }
 
 .jumbotron {

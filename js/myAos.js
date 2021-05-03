@@ -1,7 +1,8 @@
 //gallery
 const imgGallery = document.querySelectorAll(".img-gallery");
+let delay = 50;
 for (let i = 0; i < imgGallery.length; i++) {
-  imgGallery[i].setAttribute("data-aos", "fade-up");
+  imgGallery[i].setAttribute("data-aos", "fade-right");
   imgGallery[i].setAttribute("data-aos-offset", "400");
 }
 
