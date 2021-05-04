@@ -1,9 +1,9 @@
 body {
   font-family: "Montserrat";
+  width: 100vw;
 }
 
-#about #hobby {
-  overflow-x: hidden;
+nav {
 }
 
 .jumbotron {
@@ -11,8 +11,13 @@ body {
   background-color: #e2edff;
 }
 
+#about {
+  overflow-x: hidden;
+}
+
 #hobby {
   background-color: #e2edff;
+  overflow-x: hidden;
 }
 
 #projects {
