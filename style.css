@@ -1,9 +1,7 @@
 body {
   font-family: "Montserrat";
   width: 100vw;
-}
-
-nav {
+  overflow-x: hidden;
 }
 
 .jumbotron {
